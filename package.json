@@ -12,7 +12,7 @@
     "typescript": "catalog:"
   },
   "scripts": {
-    "build": "echo 'Skipping build - source-only package'",
-    "typecheck": "tsc --noEmit || true"
+    "build": "tsc --noEmit",
+    "typecheck": "tsc --noEmit"
   }
 }
