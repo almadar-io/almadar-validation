@@ -1,0 +1,308 @@
+/**
+ * Orbital Validation Error Codes
+ *
+ * AUTO-GENERATED from orbital-rust/crates/orbital-compiler/src/phases/validation/error.rs
+ * Do not edit directly - run: npx tsx orbital-shared/validation/generate-error-codes.ts
+ *
+ * Generated: 2026-01-29T09:28:51.606Z
+ */
+
+/**
+ * All orbital validation error codes.
+ * These match the Rust ErrorCode enum in orbital-rust.
+ */
+export const ORBITAL_ERROR_CODES = {
+  // ENTITY errors
+  "ORB_E_MISSING_NAME": "ORB_E_MISSING_NAME",
+  "ORB_E_NO_FIELDS": "ORB_E_NO_FIELDS",
+  "ORB_E_INVALID_FIELD_TYPE": "ORB_E_INVALID_FIELD_TYPE",
+  "ORB_E_DUPLICATE_FIELD": "ORB_E_DUPLICATE_FIELD",
+  "ORB_E_INVALID_FIELD_NAME": "ORB_E_INVALID_FIELD_NAME",
+  "ORB_E_MISSING_COLLECTION": "ORB_E_MISSING_COLLECTION",
+  "ORB_E_INVALID_RELATION": "ORB_E_INVALID_RELATION",
+  "ORB_E_EMPTY_ENUM_VALUES": "ORB_E_EMPTY_ENUM_VALUES",
+
+  // TRAIT errors
+  "ORB_T_UNDEFINED_TRAIT": "ORB_T_UNDEFINED_TRAIT",
+  "ORB_T_INVALID_FORMAT": "ORB_T_INVALID_FORMAT",
+  "ORB_T_INVALID_CATEGORY": "ORB_T_INVALID_CATEGORY",
+  "ORB_T_NO_INITIAL_STATE": "ORB_T_NO_INITIAL_STATE",
+  "ORB_T_MULTIPLE_INITIAL_STATES": "ORB_T_MULTIPLE_INITIAL_STATES",
+  "ORB_T_DUPLICATE_STATE": "ORB_T_DUPLICATE_STATE",
+  "ORB_T_INVALID_TRANSITION": "ORB_T_INVALID_TRANSITION",
+  "ORB_T_DUPLICATE_TRANSITION": "ORB_T_DUPLICATE_TRANSITION",
+  "ORB_T_MISSING_INIT_TRANSITION": "ORB_T_MISSING_INIT_TRANSITION",
+  "ORB_T_MISSING_RENDER_UI": "ORB_T_MISSING_RENDER_UI",
+  "ORB_T_DEPRECATED_UI": "ORB_T_DEPRECATED_UI",
+  "ORB_T_DUPLICATE_NAME": "ORB_T_DUPLICATE_NAME",
+  "ORB_T_UNDEFINED_EVENT": "ORB_T_UNDEFINED_EVENT",
+
+  // PAGE errors
+  "ORB_P_MISSING_NAME": "ORB_P_MISSING_NAME",
+  "ORB_P_MISSING_PATH": "ORB_P_MISSING_PATH",
+  "ORB_P_INVALID_PATH": "ORB_P_INVALID_PATH",
+  "ORB_P_DUPLICATE_PATH": "ORB_P_DUPLICATE_PATH",
+  "ORB_P_MISSING_TRAITS": "ORB_P_MISSING_TRAITS",
+  "ORB_P_EMPTY_TRAITS": "ORB_P_EMPTY_TRAITS",
+  "ORB_P_SECTIONS_FORBIDDEN": "ORB_P_SECTIONS_FORBIDDEN",
+  "ORB_P_INVALID_TRAIT_REF": "ORB_P_INVALID_TRAIT_REF",
+  "ORB_P_INVALID_VIEW_TYPE": "ORB_P_INVALID_VIEW_TYPE",
+
+  // SLOT errors
+  "ORB_SLOT_MAIN_NOT_COVERED": "ORB_SLOT_MAIN_NOT_COVERED",
+  "ORB_SLOT_CONTENTION": "ORB_SLOT_CONTENTION",
+  "ORB_SLOT_INVALID_NESTING": "ORB_SLOT_INVALID_NESTING",
+  "ORB_SLOT_PRIORITY_CONFLICT": "ORB_SLOT_PRIORITY_CONFLICT",
+  "ORB_SLOT_INVALID_NAME": "ORB_SLOT_INVALID_NAME",
+  "ORB_SLOT_HUD_NON_GAME": "ORB_SLOT_HUD_NON_GAME",
+
+  // RENDER_UI errors
+  "ORB_RUI_INVALID_SLOT": "ORB_RUI_INVALID_SLOT",
+  "ORB_RUI_INVALID_PATTERN": "ORB_RUI_INVALID_PATTERN",
+  "ORB_RUI_MISSING_PATTERN_TYPE": "ORB_RUI_MISSING_PATTERN_TYPE",
+  "ORB_RUI_INVALID_PROP": "ORB_RUI_INVALID_PROP",
+  "ORB_RUI_MISSING_REQUIRED_PROP": "ORB_RUI_MISSING_REQUIRED_PROP",
+  "ORB_RUI_INVALID_ITEM_ACTION": "ORB_RUI_INVALID_ITEM_ACTION",
+  "ORB_RUI_UNKNOWN_ITEM_ACTION_PROP": "ORB_RUI_UNKNOWN_ITEM_ACTION_PROP",
+  "ORB_RUI_MISSING_ACTION": "ORB_RUI_MISSING_ACTION",
+
+  // EFFECT errors
+  "ORB_EFF_CALL_SERVICE_MISSING_SERVICE": "ORB_EFF_CALL_SERVICE_MISSING_SERVICE",
+  "ORB_EFF_CALL_SERVICE_MISSING_ACTION": "ORB_EFF_CALL_SERVICE_MISSING_ACTION",
+  "ORB_EFF_CALL_SERVICE_MISSING_HANDLERS": "ORB_EFF_CALL_SERVICE_MISSING_HANDLERS",
+  "ORB_EFF_SET_INVALID_BINDING": "ORB_EFF_SET_INVALID_BINDING",
+  "ORB_EFF_SET_PAYLOAD_NOT_ALLOWED": "ORB_EFF_SET_PAYLOAD_NOT_ALLOWED",
+  "ORB_EFF_FETCH_INVALID_ENTITY": "ORB_EFF_FETCH_INVALID_ENTITY",
+  "ORB_EFF_SLOT_CONFLICT": "ORB_EFF_SLOT_CONFLICT",
+  "ORB_EFF_UNKNOWN_TYPE": "ORB_EFF_UNKNOWN_TYPE",
+
+  // SEXPR errors
+  "SEXPR_INVALID_OPERATOR": "SEXPR_INVALID_OPERATOR",
+  "SEXPR_ARITY_MISMATCH": "SEXPR_ARITY_MISMATCH",
+  "SEXPR_EFFECT_IN_GUARD": "SEXPR_EFFECT_IN_GUARD",
+  "SEXPR_INVALID_BINDING": "SEXPR_INVALID_BINDING",
+  "SEXPR_INVALID_BINDING_PATH": "SEXPR_INVALID_BINDING_PATH",
+  "SEXPR_UNKNOWN_ENTITY": "SEXPR_UNKNOWN_ENTITY",
+  "SEXPR_PARSE_ERROR": "SEXPR_PARSE_ERROR",
+
+  // SERVICE errors
+  "ORB_SVC_DUPLICATE_NAME": "ORB_SVC_DUPLICATE_NAME",
+  "ORB_SVC_MISSING_BASE_URL": "ORB_SVC_MISSING_BASE_URL",
+  "ORB_SVC_INVALID_URL": "ORB_SVC_INVALID_URL",
+  "ORB_SVC_MISSING_EVENTS": "ORB_SVC_MISSING_EVENTS",
+  "ORB_SVC_RESERVED_EVENT": "ORB_SVC_RESERVED_EVENT",
+  "ORB_SVC_MISSING_CAPABILITIES": "ORB_SVC_MISSING_CAPABILITIES",
+  "ORB_SVC_MISSING_SERVER_PATH": "ORB_SVC_MISSING_SERVER_PATH",
+  "ORB_SVC_UNKNOWN_TYPE": "ORB_SVC_UNKNOWN_TYPE",
+  "ORB_SVC_INVALID_INTEGRATOR": "ORB_SVC_INVALID_INTEGRATOR",
+
+  // CROSS errors
+  "ORB_X_DUPLICATE_ENTITY": "ORB_X_DUPLICATE_ENTITY",
+  "ORB_X_ORPHAN_LISTENER": "ORB_X_ORPHAN_LISTENER",
+  "ORB_X_UNUSED_EMISSION": "ORB_X_UNUSED_EMISSION",
+  "ORB_X_CIRCULAR_DEPENDENCY": "ORB_X_CIRCULAR_DEPENDENCY",
+  "ORB_X_EVENT_COLLISION": "ORB_X_EVENT_COLLISION",
+  "ORB_X_MISSING_ORBITAL_NAME": "ORB_X_MISSING_ORBITAL_NAME",
+  "ORB_X_PAYLOAD_MISMATCH": "ORB_X_PAYLOAD_MISMATCH",
+
+  // BINDING errors
+  "ORB_BINDING_INVALID_FORMAT": "ORB_BINDING_INVALID_FORMAT",
+  "ORB_BINDING_UNKNOWN_ROOT": "ORB_BINDING_UNKNOWN_ROOT",
+  "ORB_BINDING_INVALID_PATH": "ORB_BINDING_INVALID_PATH",
+  "ORB_BINDING_STATE_NO_PATH": "ORB_BINDING_STATE_NO_PATH",
+  "ORB_BINDING_NOW_NO_PATH": "ORB_BINDING_NOW_NO_PATH",
+  "ORB_BINDING_PAYLOAD_IN_TICK": "ORB_BINDING_PAYLOAD_IN_TICK",
+  "ORB_BINDING_UNKNOWN_ENTITY": "ORB_BINDING_UNKNOWN_ENTITY",
+  "ORB_BINDING_INVALID_FIELD_NAME": "ORB_BINDING_INVALID_FIELD_NAME",
+  "ORB_BINDING_SET_TARGET_MISSING_PATH": "ORB_BINDING_SET_TARGET_MISSING_PATH",
+  "ORB_BINDING_PAYLOAD_FIELD_UNDECLARED": "ORB_BINDING_PAYLOAD_FIELD_UNDECLARED",
+
+  // CIRCUIT errors
+  "CIRCUIT_ORPHAN_EVENT": "CIRCUIT_ORPHAN_EVENT",
+  "CIRCUIT_DUPLICATE_EVENT": "CIRCUIT_DUPLICATE_EVENT",
+  "CIRCUIT_DEAD_END_COMPONENT": "CIRCUIT_DEAD_END_COMPONENT",
+  "CIRCUIT_UNREACHABLE_STATE": "CIRCUIT_UNREACHABLE_STATE",
+  "CIRCUIT_DEAD_END_STATE": "CIRCUIT_DEAD_END_STATE",
+  "CIRCUIT_ACTION_COMPONENT_MISMATCH": "CIRCUIT_ACTION_COMPONENT_MISMATCH",
+
+  // ICON errors
+  "ORB_UI_ICON_INVALID_FORMAT": "ORB_UI_ICON_INVALID_FORMAT",
+  "ORB_UI_ICON_EMPTY": "ORB_UI_ICON_EMPTY",
+  "ORB_UI_ICON_NOT_FOUND": "ORB_UI_ICON_NOT_FOUND",
+
+  // QUERY errors
+  "ORB_QUERY_MISSING_SEARCH": "ORB_QUERY_MISSING_SEARCH",
+  "ORB_QUERY_MISSING_RECOMMENDED": "ORB_QUERY_MISSING_RECOMMENDED",
+  "ORB_QUERY_UNSUPPORTED_PATTERN": "ORB_QUERY_UNSUPPORTED_PATTERN",
+  "ORB_QUERY_UNKNOWN_SINGLETON": "ORB_QUERY_UNKNOWN_SINGLETON",
+  "ORB_QUERY_UNUSED_SINGLETON": "ORB_QUERY_UNUSED_SINGLETON",
+
+  // TRAIT_EVENT errors
+  "ORB_T_EVT_UNDECLARED": "ORB_T_EVT_UNDECLARED",
+  "ORB_T_EVT_INVALID_NAME": "ORB_T_EVT_INVALID_NAME",
+  "ORB_T_EVT_TICK_UNDECLARED": "ORB_T_EVT_TICK_UNDECLARED",
+  "ORB_T_EVT_SCOPE_MISMATCH": "ORB_T_EVT_SCOPE_MISMATCH",
+  "ORB_T_EVT_DUPLICATE": "ORB_T_EVT_DUPLICATE",
+  "ORB_T_EVT_EXTERNAL_MISSING_PAYLOAD": "ORB_T_EVT_EXTERNAL_MISSING_PAYLOAD",
+
+  // SCHEMA errors
+  "ORB_S_MISSING_NAME": "ORB_S_MISSING_NAME",
+  "ORB_S_NO_ORBITALS": "ORB_S_NO_ORBITALS",
+  "ORB_S_EMPTY_VERSION": "ORB_S_EMPTY_VERSION",
+
+  // UNKNOWN errors
+  "entity": "entity",
+  "trait": "trait",
+  "page": "page",
+  "slot": "slot",
+  "render_ui": "render_ui",
+  "effect": "effect",
+  "sexpr": "sexpr",
+  "service": "service",
+  "cross": "cross",
+  "binding": "binding",
+  "circuit": "circuit",
+  "icon": "icon",
+  "query": "query",
+  "trait_event": "trait_event",
+  "schema": "schema",
+
+} as const;
+
+export type OrbitalErrorCode = keyof typeof ORBITAL_ERROR_CODES;
+
+/**
+ * Error categories for grouping errors.
+ */
+export const ERROR_CATEGORIES = [
+  "entity",
+  "trait",
+  "page",
+  "slot",
+  "render_ui",
+  "effect",
+  "sexpr",
+  "service",
+  "cross",
+  "binding",
+  "circuit",
+  "icon",
+  "query",
+  "trait_event",
+  "schema",
+] as const;
+
+export type ErrorCategory = (typeof ERROR_CATEGORIES)[number];
+
+/**
+ * Get the category for an error code.
+ */
+export function getErrorCategory(code: string): ErrorCategory {
+  if (code.startsWith("ORB_E_")) return "entity";
+  if (code.startsWith("ORB_T_EVT_")) return "trait_event";
+  if (code.startsWith("ORB_T_")) return "trait";
+  if (code.startsWith("ORB_P_")) return "page";
+  if (code.startsWith("ORB_SLOT_")) return "slot";
+  if (code.startsWith("ORB_RUI_")) return "render_ui";
+  if (code.startsWith("ORB_EFF_")) return "effect";
+  if (code.startsWith("SEXPR_")) return "sexpr";
+  if (code.startsWith("ORB_SVC_")) return "service";
+  if (code.startsWith("ORB_X_")) return "cross";
+  if (code.startsWith("ORB_BINDING_")) return "binding";
+  if (code.startsWith("CIRCUIT_")) return "circuit";
+  if (code.startsWith("ORB_UI_ICON_")) return "icon";
+  if (code.startsWith("ORB_QUERY_")) return "query";
+  if (code.startsWith("ORB_S_")) return "schema";
+  return "schema"; // default
+}
+
+/**
+ * Validation error from the Rust CLI.
+ */
+export interface OrbitalValidationError {
+  /** Error code (e.g., "ORB_E_MISSING_NAME") */
+  code: string;
+  /** Human-readable error message */
+  message: string;
+  /** JSON path to the error location */
+  path: string;
+  /** Suggestion for fixing the error */
+  suggestion?: string;
+  /** Valid values for enum-like fields */
+  validValues?: string[];
+}
+
+/**
+ * Validation warning from the Rust CLI.
+ */
+export interface OrbitalValidationWarning {
+  /** Warning code */
+  code: string;
+  /** Human-readable warning message */
+  message: string;
+  /** JSON path to the warning location */
+  path: string;
+}
+
+/**
+ * Result from running orbital validate CLI.
+ */
+export interface OrbitalValidationResult {
+  /** Whether validation passed (no errors) */
+  valid: boolean;
+  /** All validation errors */
+  errors: OrbitalValidationError[];
+  /** All validation warnings */
+  warnings: OrbitalValidationWarning[];
+}
+
+// ============================================================================
+// Legacy Compatibility Types
+// These types are used by the client UI for displaying validation errors.
+// They provide a simplified view of OrbitalValidationError for UI components.
+// ============================================================================
+
+/**
+ * Simplified validation error for UI display.
+ * Maps from OrbitalValidationError but with flexible path type for UI rendering.
+ */
+export interface ValidationError {
+  /** Error code */
+  code: string;
+  /** Human-readable error message */
+  message: string;
+  /** Path to error location (string or array for UI flexibility) */
+  path?: string | (string | number)[];
+  /** Suggestion for fixing the error */
+  suggestion?: string;
+  /** Error severity for UI styling */
+  severity?: "error" | "warning" | "info";
+  /** Valid values for enum-like fields */
+  validValues?: string[];
+  /** Expected shape/structure for complex types */
+  expectedShape?: string;
+  /** Guidance for fixing the error */
+  fixGuidance?: string;
+  /** Optional LLM context for debugging LLM-originated errors */
+  llmContext?: LLMErrorContext;
+}
+
+/**
+ * Context for errors originating from LLM output.
+ * Used for debugging and error correction.
+ */
+export interface LLMErrorContext {
+  /** Preview of the raw LLM output (truncated) */
+  rawValuePreview?: string;
+  /** Expected type or structure */
+  expectedType?: string;
+  /** Actual type received */
+  actualType?: string;
+  /** Source of the error */
+  source?: {
+    /** Which agent produced this */
+    agent: "requirements" | "builder" | "view-planner";
+    /** What operation was being performed */
+    operation: string;
+  };
+}
