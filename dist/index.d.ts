@@ -1,3 +1,6 @@
+import { OrbitalValidationResult } from './error-codes.js';
+export { ERROR_CATEGORIES, ErrorCategory, LLMErrorContext, ORBITAL_ERROR_CODES, OrbitalErrorCode, OrbitalValidationError, OrbitalValidationWarning, ValidationError, getErrorCategory } from './error-codes.js';
+
 /**
  * Orbital Validation Module
  *
@@ -6,15 +9,16 @@
  *
  * Source of truth: orbital-rust/crates/orbital-compiler/src/phases/validation/error.rs
  */
-export * from './error-codes.js';
-import type { OrbitalValidationResult } from './error-codes.js';
+
 /**
  * Validate a full orbital unit.
  * @deprecated Use `orbital validate` CLI instead. This stub always returns valid.
  */
-export declare function validateFullOrbitalUnit(_orbital: unknown): OrbitalValidationResult;
+declare function validateFullOrbitalUnit(_orbital: unknown): OrbitalValidationResult;
 /**
  * Validate an orbital schema.
  * @deprecated Use `orbital validate` CLI instead. This stub always returns valid.
  */
-export declare function validateOrbitalSchema(_schema: unknown): OrbitalValidationResult;
+declare function validateOrbitalSchema(_schema: unknown): OrbitalValidationResult;
+
+export { OrbitalValidationResult, validateFullOrbitalUnit, validateOrbitalSchema };

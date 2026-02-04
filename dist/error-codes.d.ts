@@ -10,7 +10,7 @@
  * All orbital validation error codes.
  * These match the Rust ErrorCode enum in orbital-rust.
  */
-export declare const ORBITAL_ERROR_CODES: {
+declare const ORBITAL_ERROR_CODES: {
     readonly ORB_E_MISSING_NAME: "ORB_E_MISSING_NAME";
     readonly ORB_E_NO_FIELDS: "ORB_E_NO_FIELDS";
     readonly ORB_E_INVALID_FIELD_TYPE: "ORB_E_INVALID_FIELD_TYPE";
@@ -135,20 +135,20 @@ export declare const ORBITAL_ERROR_CODES: {
     readonly trait_event: "trait_event";
     readonly schema: "schema";
 };
-export type OrbitalErrorCode = keyof typeof ORBITAL_ERROR_CODES;
+type OrbitalErrorCode = keyof typeof ORBITAL_ERROR_CODES;
 /**
  * Error categories for grouping errors.
  */
-export declare const ERROR_CATEGORIES: readonly ["entity", "trait", "page", "slot", "render_ui", "effect", "sexpr", "service", "cross", "binding", "circuit", "icon", "query", "trait_event", "schema"];
-export type ErrorCategory = (typeof ERROR_CATEGORIES)[number];
+declare const ERROR_CATEGORIES: readonly ["entity", "trait", "page", "slot", "render_ui", "effect", "sexpr", "service", "cross", "binding", "circuit", "icon", "query", "trait_event", "schema"];
+type ErrorCategory = (typeof ERROR_CATEGORIES)[number];
 /**
  * Get the category for an error code.
  */
-export declare function getErrorCategory(code: string): ErrorCategory;
+declare function getErrorCategory(code: string): ErrorCategory;
 /**
  * Validation error from the Rust CLI.
  */
-export interface OrbitalValidationError {
+interface OrbitalValidationError {
     /** Error code (e.g., "ORB_E_MISSING_NAME") */
     code: string;
     /** Human-readable error message */
@@ -163,7 +163,7 @@ export interface OrbitalValidationError {
 /**
  * Validation warning from the Rust CLI.
  */
-export interface OrbitalValidationWarning {
+interface OrbitalValidationWarning {
     /** Warning code */
     code: string;
     /** Human-readable warning message */
@@ -174,7 +174,7 @@ export interface OrbitalValidationWarning {
 /**
  * Result from running orbital validate CLI.
  */
-export interface OrbitalValidationResult {
+interface OrbitalValidationResult {
     /** Whether validation passed (no errors) */
     valid: boolean;
     /** All validation errors */
@@ -186,7 +186,7 @@ export interface OrbitalValidationResult {
  * Simplified validation error for UI display.
  * Maps from OrbitalValidationError but with flexible path type for UI rendering.
  */
-export interface ValidationError {
+interface ValidationError {
     /** Error code */
     code: string;
     /** Human-readable error message */
@@ -210,7 +210,7 @@ export interface ValidationError {
  * Context for errors originating from LLM output.
  * Used for debugging and error correction.
  */
-export interface LLMErrorContext {
+interface LLMErrorContext {
     /** Preview of the raw LLM output (truncated) */
     rawValuePreview?: string;
     /** Expected type or structure */
@@ -225,3 +225,5 @@ export interface LLMErrorContext {
         operation: string;
     };
 }
+
+export { ERROR_CATEGORIES, type ErrorCategory, type LLMErrorContext, ORBITAL_ERROR_CODES, type OrbitalErrorCode, type OrbitalValidationError, type OrbitalValidationResult, type OrbitalValidationWarning, type ValidationError, getErrorCategory };
