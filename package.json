@@ -1,6 +1,6 @@
 {
   "name": "@almadar/validation",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "Schema validation rules for Almadar",
   "type": "module",
   "main": "./dist/index.js",
