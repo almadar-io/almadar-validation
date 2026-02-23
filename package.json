@@ -36,12 +36,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/almadar-io/almadar-validation.git"
+    "url": "https://github.com/almadar-io/almadar.git",
+    "directory": "docs/packages/validation"
   },
   "license": "MIT",
   "keywords": [
     "almadar",
     "validation",
     "schema"
-  ]
+  ],
+  "homepage": "https://github.com/almadar-io/almadar#readme"
 }
