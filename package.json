@@ -45,7 +45,7 @@
     "url": "https://github.com/almadar-io/almadar-validation.git",
     "directory": "docs/packages/validation"
   },
-  "license": "MIT",
+  "license": "BSL-1.1",
   "keywords": [
     "almadar",
     "validation",
