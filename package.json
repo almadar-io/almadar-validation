@@ -1,6 +1,6 @@
 {
   "name": "@almadar/validation",
-  "version": "2.6.0",
+  "version": "2.7.0",
   "description": "Schema validation rules for Almadar",
   "type": "module",
   "main": "./dist/index.js",
@@ -38,7 +38,7 @@
     "vitest": "^1.4.0",
     "eslint": "10.0.0",
     "@typescript-eslint/parser": "8.56.0",
-    "@almadar/eslint-plugin": "^2.14.0",
+    "@almadar/eslint-plugin": "^2.15.0",
     "@types/node": "^22.0.0",
     "turbo": "^2.8.17"
   },
