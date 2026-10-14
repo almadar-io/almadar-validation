@@ -1,6 +1,6 @@
 {
   "name": "@almadar/validation",
-  "version": "2.11.0",
+  "version": "2.12.0",
   "description": "Schema validation rules for Almadar",
   "type": "module",
   "main": "./dist/index.js",
@@ -23,6 +23,9 @@
     "registry": "https://registry.npmjs.org",
     "access": "public"
   },
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "build": "tsup",
     "build:watch": "tsup --watch",
@@ -38,7 +41,7 @@
     "vitest": "^1.4.0",
     "eslint": "10.0.0",
     "@typescript-eslint/parser": "8.65.0",
-    "@almadar/eslint-plugin": "^2.20.0",
+    "@almadar/eslint-plugin": "^2.22.0",
     "@types/node": "^22.0.0",
     "turbo": "^2.8.17"
   },

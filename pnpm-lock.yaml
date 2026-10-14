@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@almadar/eslint-plugin':
-        specifier: ^2.20.0
-        version: 2.20.0(eslint@10.0.0)
+        specifier: ^2.22.0
+        version: 2.22.0(eslint@10.0.0)
       '@types/node':
         specifier: ^22.0.0
         version: 22.20.0
@@ -38,8 +38,9 @@ importers:
 
 packages:
 
-  '@almadar/eslint-plugin@2.20.0':
-    resolution: {integrity: sha512-f3kUaZqFJYC38tL/FZxEel2cm//288/MbCYCykyHFtie33XHQPyVyocrjyP8XQsbt+SlZ22X3tzo313/y2yKIg==}
+  '@almadar/eslint-plugin@2.22.0':
+    resolution: {integrity: sha512-LKs49DVTMpx0DKhLLqX3vdqB4FDsgFbvIatTYEi01kQSU4BLE593jtJ/9TsfPXflw0vk3EA5RGX5a3JJU8/5WQ==}
+    engines: {node: '>=22'}
     peerDependencies:
       eslint: '>=8.0.0'
 
@@ -1408,7 +1409,7 @@ packages:
 
 snapshots:
 
-  '@almadar/eslint-plugin@2.20.0(eslint@10.0.0)':
+  '@almadar/eslint-plugin@2.22.0(eslint@10.0.0)':
     dependencies:
       eslint: 10.0.0
       jsonc-eslint-parser: 3.1.0
